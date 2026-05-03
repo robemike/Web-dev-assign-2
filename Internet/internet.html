@@ -4,130 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Internet</title>
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body
-    style="
-      font-family: Georgia, serif;
-      background-color: #f5f0eb;
-      margin: 0;
-      padding: 40px;
-    "
-  >
-    <div
-      style="
-        max-width: 600px;
-        margin: 0 auto;
-        background-color: white;
-        padding: 40px;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      "
-    >
-      <h1
-        style="
-          color: #2c2c2c;
-          border-bottom: 2px solid #e07b39;
-          padding-bottom: 10px;
-        "
-      >
-        The Internet
-      </h1>
+  <body>
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2 class="logo">The Internet</h2>
 
-      <h3>What is the internet?</h3>
+        <ul class="term-list">
+          <li><a href="#protocol">Protocols</a></li>
+          <li><a href="#http">HTTP</a></li>
+          <li><a href="#https">HTTPS</a></li>
+          <li><a href="#ftp">FTP</a></li>
+          <li><a href="#smtp">SMTP</a></li>
+          <li><a href="#telnet">Telnet</a></li>
+          <li><a href="#gopher">Gopher</a></li>
+          <li><a href="#usenet">Usenet</a></li>
+          <li><a href="#email">Email</a></li>
+        </ul>
+      </aside>
 
-      <img
-        src="../images/internet.png"
-        alt="Protocol illustration"
-        style="
-          display: block;
-          margin: 20px auto;
-          width: 400px;
-          height: auto;
-          border-radius: 6px;
-          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-        "
-      />
+      <main class="content">
+        <div id="protocol" class="term active">
+          <h1>Protocol</h1>
+          <p>
+            A common software standard/language that computers use to
+            communicate over the Internet. Examples include HTTP, FTP, SMTP,
+            TCP/IP.
+          </p>
+          <img
+            src="../images/protocol.png"
+            alt="Protocol illustration"
+            class="image"
+          />
+        </div>
 
-      <p style="line-height: 1.7;">
-        The Internet is a world-wide system of interconnected computers
-        cooperating to exchange data using a common software standard
-        (protocols) through telephone lines and satellite links. It started in
-        1969 as a US military experiment (ARPANET).
-      </p>
-      <p style="line-height: 1.7;">The following are aspects of the internet:</p>
+        <div id="http" class="term">
+          <h1>HTTP</h1>
+          <p>The primary protocol used by the World Wide Web to send information. It is a request-response protocol. HTTP requests are of specific types: GET, POST, HEAD, PUT, DELETE, CONNECT, OPTIONS, or TRACE. Uses port 80 by default.</p>
+        </div>
 
-      <ul style="list-style: none; padding: 0">
-        <li style="margin: 12px 0">
-          <a
-            href="protocol.html"
-            style="text-decoration: none; color: #e07b39; font-size: 18px"
-            >→ Protocols</a
-          >
-        </li>
+        <div id="https" class="term">
+          <h1>HTTPS</h1>
+          <p>The secure version of HTTP. Uses port 443.</p>
+        </div>
 
-        <li style="margin: 12px 0">
-          <a
-            href=".html"
-            style="text-decoration: none; color: #e07b39; font-size: 18px"
-            >→ HTTP (Hypertext Transfer Protocol)</a
-          >
-        </li>
+        <div id="ftp" class="term">
+          <h1>File Transfer Protocol (FTP)</h1>
+          <p>A protocol that allows files to be easily copied to and from remote sites on the Internet.</p>
+        </div>
 
-        <li style="margin: 12px 0">
-          <a
-            href=".html"
-            style="text-decoration: none; color: #e07b39; font-size: 18px"
-            >→ HTTPS (Hypertext Transfer Protocol Secure)</a
-          >
-        </li>
+        <div id="smtp" class="term">
+          <h1>Simple Mail Transfer Protocol (STMP)</h1>
+          <p>A protocol within TCP/IP used for sending email messages.</p>
+        </div>
 
-        <li style="margin: 12px 0">
-          <a
-            href=".html"
-            style="text-decoration: none; color: #e07b39; font-size: 18px"
-            >→ FTP (File Transfer Protocol)</a
-          >
-        </li>
+        <div id="telnet" class="term">
+          <h1>Telnet</h1>
+          <p>An Internet service that allows a user to connect to a remote computer.</p>
+        </div>
 
-        <li style="margin: 12px 0">
-          <a
-            href=".html"
-            style="text-decoration: none; color: #e07b39; font-size: 18px"
-            >→ STMP (Simple Mail Transfer Protocol)</a
-          >
-        </li>
+        <div id="gopher" class="term">
+          <h1>Gopher</h1>
+          <p>An early Internet service for information retrieval (predating the Web).</p>
+        </div>
 
-        <li style="margin: 12px 0">
-          <a
-            href="hobbies.html"
-            style="text-decoration: none; color: #e07b39; font-size: 18px"
-            >→ Telnet</a
-          >
-        </li>
+        <div id="usenet" class="term">
+          <h1>Usenet</h1>
+          <p>An Internet service for discussion groups and message boards.</p>
+        </div>
 
-        <li style="margin: 12px 0">
-          <a
-            href="favorites.html"
-            style="text-decoration: none; color: #e07b39; font-size: 18px"
-            >→ Gopher</a
-          >
-        </li>
-        <li style="margin: 12px 0">
-          <a
-            href="hobbies.html"
-            style="text-decoration: none; color: #e07b39; font-size: 18px"
-            >→ Usenet</a
-          >
-        </li>
+        <div id="email" class="term">
+          <h1>Email</h1>
+          <p>An Internet service for sending and receiving electronic messages.</p>
+        </div>
 
-        <li style="margin: 12px 0">
-          <a
-            href="favorites.html"
-            style="text-decoration: none; color: #e07b39; font-size: 18px"
-            >→ Email</a
-          >
-        </li>
-      </ul>
+      </main>
     </div>
+
+    <script>
+      function showTerm(termId) {
+        const terms = document.querySelectorAll(".term");
+        terms.forEach((term) => term.classList.remove("active"));
+        document.getElementById(termId).classList.add("active");
+      }
+
+      // Handle clicks
+      document.querySelectorAll(".term-list a").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const id = this.getAttribute("href").substring(1);
+          showTerm(id);
+          window.location.hash = id;
+        });
+      });
+
+      // Load from URL
+      window.onload = function () {
+        const hash = window.location.hash.substring(1);
+        if (hash) showTerm(hash);
+      };
+    </script>
   </body>
 </html>
